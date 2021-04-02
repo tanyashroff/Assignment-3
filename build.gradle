@@ -57,3 +57,9 @@ check.dependsOn jacocoTestReport
 // *************************************************************************
 //  Write your task below this comment. DO NOT change anything before this.
 // *************************************************************************
+tasks.register('myGradleTask') {
+    dependsOn tasks.build
+    doLast {
+        println 'Build Finished!'
+    }
+}
